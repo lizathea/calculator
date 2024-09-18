@@ -1,0 +1,79 @@
+/* Body styling */
+body {
+  font-family: Arial;
+  background-color: rgb(0, 0, 0);
+  text-align: center; /* Center align content on smaller devices */
+}
+
+/* Screen display styling with responsive width */
+#screen {
+  width: 100%; /* Take full width initially */
+  max-width: 470px; /* Maximum width of the screen */
+  min-width: 300px; /* Minimum width for smaller screens */
+  height: 200px;
+  font-size: 30px;
+  font-family: Arial;
+  text-align: start;
+  border: 0 solid white;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+/* Display of previous calculation or expression */
+.calculation {
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* General button styling with responsive sizing */
+.calculator-button {
+  height: 60px;
+  width: 60px;
+  max-width: 100px; /* Maximum button width */
+  min-width: 40px; /* Minimum button width for smaller screens */
+  border-radius: 60px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Gray button styling */
+.gray-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+/* Styling for the "Rad | Deg" button (twice the width of a normal button) */
+.gray-2-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  height: 60px;
+  width: 100%; /* Make it fully responsive */
+  max-width: 130px; /* Maximum width for larger screens */
+  min-width: 80px;  /* Minimum width for smaller screens */
+  border-radius: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Orange button styling */
+.orange-button {
+  background-color: rgb(254, 160, 10);
+  color: white;
+}
+
+/* Blue button styling */
+.blue-button {
+  background-color: rgb(19, 103, 239);
+  color: white;
+}
+
+/* Milk (light gray) button styling */
+.milk-button {
+  background-color: rgba(245, 245, 245, 0.71);
+  color: black;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator Online</title>
+    <link rel="stylesheet" href="calculator.css">
+  <style type="text/css" id="operaUserStyle"></style></head>
+  <body>
+  
+  <h1>Calculator</h1>
+  <p id="exp"></p>
+  
+  <input type="text" id="screen" name="screen" value="">
+  <br><br><br>
+  <p class="calculation"></p>
+  <!--First Row-->
+  <p>
+    <button class="calculator-button gray-2-button" onclick="toggleRadDeg()">Rad | Deg</button>
+    <button class="calculator-button gray-button" onclick="calculateFac()">x!</button>
+    <button class="calculator-button milk-button" onclick="expressAdd('(')">(</button>
+    <button class="calculator-button milk-button" onclick="expressAdd(')')">)</button>
+    <button class="calculator-button milk-button" onclick="expressAdd('%')">%</button>
+    <button class="calculator-button milk-button" onclick="clearScreen()">AC</button>
+  </p>
+
+  <!--Second Row-->
+  <p>
+    <button class="calculator-button gray-button" onclick="toggleInverse()">lnv</button>
+    <button class="calculator-button gray-button" onclick="calculateSin()">sin</button>
+    <button class="calculator-button gray-button" onclick="calculateLn()">ln</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('7')">7</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('8')">8</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('9')">9</button>
+    <button class="calculator-button orange-button" onclick="expressAdd('/')">÷</button>
+  </p>
+
+  <!--Third Row-->
+  <p>
+    <button class="calculator-button gray-button" onclick="constantPi('π')">π</button>
+    <button class="calculator-button gray-button" onclick="calculateCos()">cos</button>
+    <button class="calculator-button gray-button" onclick="calculateLog()">log</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('4')">4</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('5')">5</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('6')">6</button>
+    <button class="calculator-button orange-button" onclick="expressAdd('*')">x</button>
+  </p>
+
+  <!--Fourth Row-->
+  <p>
+    <button class="calculator-button gray-button" onclick="constantE('e')">e</button>
+    <button class="calculator-button gray-button" onclick="calculateTan()">tan</button>
+    <button class="calculator-button gray-button" onclick="calculateSqrt()">√</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('1')">1</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('2')">2</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('3')">3</button>
+    <button class="calculator-button orange-button" onclick="expressAdd('-')">-</button>
+  </p>
+
+  <!--Fifth Row-->
+  <p>
+    <button class="calculator-button gray-button" onclick="answer()">Ans</button>
+    <button class="calculator-button gray-button" onclick="calculateExp()">EXP</button>
+    <button class="calculator-button gray-button" onclick="calculatePower()">xʸ</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('0')">0</button>
+    <button class="calculator-button gray-button" onclick="expressAdd('.')">.</button>
+    <button class="calculator-button blue-button" onclick="calResult()">=</button>
+    <button class="calculator-button orange-button" onclick="expressAdd('+')">+</button>
+  </p>
+
+ 
+  <script src="calculator.js"></script>
+  </body>
+</html>
